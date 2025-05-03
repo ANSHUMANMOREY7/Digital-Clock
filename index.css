@@ -23,3 +23,9 @@ body{
     
     
 }
+.colen{
+    padding: 0 2px;
+    margin: 0 16px;
+    text-shadow: 2px 2px 5px black;
+
+}
