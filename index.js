@@ -8,10 +8,10 @@ function loadclock() {
     hour = hour > 12 ? hour - 12 : hour;
     hour = hour < 10 ? "0" + hour : hour;
     let minutes = date.getMinutes();
-    minutes = minutes <= 10 ? "0" + minutes : minutes;
+    minutes = minutes <= 9 ? "0" + minutes : minutes;
     let seconds = date.getSeconds();
     seconds = seconds <= 9 ? "0" + seconds : seconds;
-    
+
     hourelement.innerHTML = hour;
     minuteelement.innerHTML = minutes;
     secondelement.innerHTML = seconds;

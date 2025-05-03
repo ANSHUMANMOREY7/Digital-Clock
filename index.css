@@ -2,8 +2,9 @@ body{
     background-color:rgb(131, 125, 70);
 }
 .Clock-container{
-    width: 750px;
+    width: 810px;
     margin: 150px auto;
+    padding: 10px;
     
     
 }
@@ -14,7 +15,7 @@ body{
     border: 40px solid black;
     font-size: 140px;
     border-radius:20px ;   
-    padding: 15px; 
+    padding: 19px; 
     background-color: rgb(50, 50, 117);
     color: rgb(92, 201, 70);
     font-family:fantasy;
@@ -28,4 +29,13 @@ body{
     margin: 0 16px;
     text-shadow: 2px 2px 5px black;
 
+}
+.ampm{
+    font-size: 80px;
+    margin-left: 10px;
+    text-shadow: 2px 2px 5px black;
+    color: rgb(92, 201, 70);
+    font-family:fantasy;
+    margin: 0 16px;
+    text-shadow: 2px 2px 5px black;
 }
