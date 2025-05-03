@@ -1,8 +1,15 @@
-
+.Clock-container{
+    width: 650px;
+    margin: 150px auto;
+    
+    
+}
 .clock-screen{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 25px solid black;
-    
+    border: 40px solid black;
+    font-size: 140px;
+    border-radius:20px ;   
+    padding: 15px; 
 }
