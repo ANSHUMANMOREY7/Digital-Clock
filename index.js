@@ -1,18 +1,23 @@
 function loadclock() {
-    const hourelement =document.getElementById('hours')
+    const hourelement = document.getElementById('hours')
     const minuteelement = document.getElementById('minutes')
-    const secondelement=document.getElementById('seconds') 
-    
-    let date = new Date() ;
-    let hour = date.getHours();
-    hours= hours > 12 ? hours - 12 : hours ;
-    let minutes= date.getMinutes();
-    let seconds = date.getSeconds();
-    const AmPm = hours >= 12 ? 'PM' : 'AM'; 
+    const secondelement = document.getElementById('seconds')
 
-    hourelement.innerHTML= hour ;
-    minuteelement.innerHTML=minutes;
-    secondelement.innerHTML=seconds;
+    let date = new Date();
+    let hour = date.getHours();
+    hour = hour > 12 ? hour - 12 : hour;
+    hour = hour < 10 ? "0" + hour : hour;
+    let minutes = date.getMinutes();
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    let seconds = date.getSeconds();
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    let AmPmours = AmPm > 12 ? 'PM' : 'AM';
+
+
+    hourelement.innerHTML = hour;
+    minuteelement.innerHTML = minutes;
+    secondelement.innerHTML = seconds;
+    AmPm.innerHTML =
 
 }
-setInterval ( loadclock , 1000);
+setInterval(loadclock, 1000);
