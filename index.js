@@ -15,4 +15,4 @@ function loadclock() {
     secondelement.innerHTML=seconds;
 
 }
-loadclock();
+setInterval ( loadclock , 1000);
